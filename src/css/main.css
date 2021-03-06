@@ -1,0 +1,162 @@
+ @font-face {
+    font-family: AachenBTRoman; /* Гарнитура шрифта */
+    src: url(../fonts/AachenBTRoman.ttf); /* Путь к файлу со шрифтом */
+
+}
+
+/*body*/
+body{
+    margin: 0;
+    font-family: AachenBTRoman, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+ *,
+ *:before,
+ *:after{
+     box-sizing: border-box;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0;
+ }
+
+ /* Container */
+ .container {
+     width: 100%;
+     max-width: 1300px;
+     height: auto;
+     margin: 0 auto;
+     padding: 0 70px;
+ }
+
+ /* Intro */
+
+ .intro {
+
+     width: 100%;
+     height: 100vh;
+     min-height: 852px;
+     position: relative;
+
+
+     background: url("../img/intro/eat.png") center no-repeat;
+     -webkit-background-size: cover;
+     background-size: cover;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+.intro_back{
+    position: relative;
+
+    background: #28282d;
+    opacity: 95%;
+    width: 100%;
+    height: 100vh;
+    min-height: 852px;
+}
+
+ .intro_box{
+     width: 100%;
+     max-width: 1224px;
+
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 240px;
+
+ }
+
+ .intro_inner{
+     width: 50%;
+     height: auto;
+     padding: 0 40px;
+
+
+
+ }
+
+ .intro_img{
+     display: block;
+     max-width:100%;
+     height: auto;
+ }
+ .intro_title{
+     font-size: 66.67px;
+     color: #e58f00;
+     line-height: 1.2;
+
+     text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
+     1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
+     1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
+
+ }
+ .intro_text{
+     font-size: 25px;
+     color: #ffffff;
+     line-height: 1.2;
+
+     text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
+     1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
+     1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
+ }
+
+ .btm{
+     font-family: AachenBTRoman,sans-serif;
+     font-size: 25px;
+     color: #28282d;
+
+     text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
+     1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
+     1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
+     text-decoration: none;
+     padding: 12px 24px;
+     background-color: #e58f00;
+     border-radius: 5px;
+
+     cursor: pointer;
+     transition: color 0.5s linear;
+
+ }
+ .btm:hover{
+    color: #ffffff;
+ }
+
+ /*Header*/
+.header{
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+/*Nav*/
+.nav{
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 30px 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    /*transition: color .2s linear;*/
+    text-decoration: none;
+}
+
+.logo{
+     margin: 0 150px 0 150px;
+ }
