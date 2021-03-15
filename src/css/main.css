@@ -91,7 +91,7 @@ body{
      height: auto;
  }
  .intro_title{
-     font-size: 66.67px;
+     font-size: 67px;
      color: #e58f00;
      line-height: 1.2;
      letter-spacing: 2px;
@@ -181,9 +181,24 @@ body{
  }
 
 .section{
-    padding-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #1d1d23;
 }
+
+
+.section_enjoy{
+    width: 100%;
+    /*max-width: 1440px;*/
+    /*max-height: 960px;*/
+
+    background: url(../img/enjoy/1.png) center no-repeat;
+    /*background-size: cover;*/
+    margin: 70px 0;
+
+}
+
+
 .section_img{
     width: 100%;
     height: 100%;
@@ -199,7 +214,7 @@ body{
     /*width: 100%;*/
     display: flex;
     flex-wrap: wrap;
-    margin: 0 15px;
+    margin: 44px 15px;
     padding-bottom: 74px;
     position: relative;
 
@@ -207,7 +222,18 @@ body{
 .section_block{
     width: 50%;
     padding-left: 50px;
+    position: relative;
+
 }
+.section_block--2{
+    width: 50%;
+    padding-left: 50px;
+    position: absolute;
+    top: 279px;
+
+}
+
+
 
 .section_title{
     font-size: 50px;
@@ -215,14 +241,22 @@ body{
     padding-top: 100px;
 }
 
+.section_title_2{
+   padding: 0;
+
+}
+
+
  .section_text{
      font-size: 33px;
      color: #ffffff;
      line-height: 1.3;
  }
 
+
  .section--section_food{
-     background: url("../img/food/orange.png")  no-repeat ;
+     background: url("../img/food/orange.png")center  no-repeat ;
+     /*-webkit-background-size:contain;*/
      /*background-size: cover;*/
 /*display: flex;*/
      /*flex-flow: row wrap;*/
@@ -233,11 +267,12 @@ body{
 
 
  .section_waffle {
+
      max-width: 791px;
      max-height: 791px;
      position: absolute;
-     top: 0;
-     right: -90px;
+     top: -127px;
+     right: -82px;
      z-index: 1;
  }
 
@@ -245,19 +280,90 @@ body{
  .section_eggs{
      max-width: 895px;
      max-height: 1035px;
-     /*!*position: absolute;*!*/
-     /*order: 999;*/
-     /*margin-left: 485px;*/
-     /*margin-top: 0;*/
-     /*margin-bottom: -80px;*/
- }
-
- .section_berries{
+     /* position: fixed; */
+     /* top: 82px; */
      order: 999;
-     margin-right: auto;
-     margin-left: -85px;
+     margin-left: 485px;
+     margin-top: 709px;
 
-     MARGIN-TOP: -350PX;
+}
+
+.section_berries{
+  order: 999;
+  margin-right: auto;
+  margin-left: -85px;
+
+    MARGIN-TOP: -644PX;
+
+}
+
+/*Gallery*/
+
+ .titles{
+     font-size: 50px;
+     text-align: center;
+ }
+.gallery_img{
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.gallery_img:last-child{
+    padding-right: 0;
+}
+
+/*enjoy*/
+
+ .enjoy_inner {
+     /*background-image: url("../img/enjoy/1.png");*/
+     /*!*background-size: cover;*!*/
+     /*-webkit-background-size: cover;*/
+     /*!*text-align: center;*!*/
+     /*margin: 14px auto;*/
+     max-width: 729px;
+     max-height: 580px;
+     margin: auto;
+
+     border: 10px #e58f00 solid;
+ }
+
+ .enjoy_content{
+    text-align: center;
+  /*order: 999;*/
+     margin: auto;
+
+     padding-top: 83px;
+     padding-right: 87px;
+     padding-bottom: 73px;
+     padding-left: 87px;
+ }
+
+ /*Menu*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+ .menu_items{
+     max-width: 423px;
+     max-height: 590px;
 
  }
 
+ .menu_name{
+     padding-top: 18px;
+     padding-bottom: 4px;
+     font-size: 30px;
+     color: #e58f00;
+     /*text-align: center;*/
+ }
+
+ .menu_text{
+     font-size: 17px;
+ }
+
+ .menu_price{
+     font-size: 25px;
+     color: #e58f00;
+
+     padding-top: 10px;
+ }
