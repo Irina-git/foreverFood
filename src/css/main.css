@@ -29,7 +29,7 @@ body{
      max-width: 1300px;
      height: auto;
      margin: 0 auto;
-     padding: 0 70px;
+     padding: 0 ;
  }
 
  /* Intro */
@@ -62,7 +62,7 @@ body{
 
  .intro_box{
      width: 100%;
-     max-width: 1224px;
+     /*max-width: 1224px;*/
 
      display: flex;
      flex-wrap: wrap;
@@ -73,21 +73,29 @@ body{
  .intro_inner{
      width: 50%;
      height: auto;
-     padding: 0 40px;
-
-
+     /*padding: 0 40px;*/
 
  }
 
+ .intro_content{
+     padding: 0 40px;
+     margin-top: 40px;
+ }
+
+
+
+
  .intro_img{
      display: block;
-     max-width:100%;
+     /*max-width:100%;*/
      height: auto;
  }
  .intro_title{
      font-size: 66.67px;
      color: #e58f00;
      line-height: 1.2;
+     letter-spacing: 2px;
+     font-weight: lighter;
 
      text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
      1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
@@ -102,8 +110,10 @@ body{
      text-shadow:-1px -1px 1px rgba(255,255,255,0.2), /* наверх и влево */
      1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
      1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
- }
 
+     margin-bottom: 50px;
+ }
+/*Button*/
  .btm{
      font-family: AachenBTRoman,sans-serif;
      font-size: 25px;
@@ -113,7 +123,7 @@ body{
      1px 1px 1px rgba(255,255,255,0.2), /* вниз и вправо */
      1px 1px 1px rgba(0,0,0,0.7); /* тёмная тень */
      text-decoration: none;
-     padding: 12px 24px;
+     padding: 20px 35px;
      background-color: #e58f00;
      border-radius: 5px;
 
@@ -153,10 +163,101 @@ body{
     padding-top: 20px;
     color: #ffffff;
     font-size: 14px;
-    /*transition: color .2s linear;*/
+    font-weight: lighter;
+    line-height: 1.2;
+    transition: color .2s linear;
     text-decoration: none;
+}
+.nav_link:first-child{
+    padding-left:0;
+}
+
+.nav_link:hover{
+    color: #e9a438;
 }
 
 .logo{
-     margin: 0 150px 0 150px;
+     margin: -20px 150px 0 150px;
  }
+
+.section{
+    padding-top: 100px;
+    background-color: #1d1d23;
+}
+.section_img{
+    width: 100%;
+    height: 100%;
+    max-width: 646px;
+    max-height: 645px;
+}
+
+ .section_img:hover{
+     background-color: #e58f00;
+ }
+
+.section_inner{
+    /*width: 100%;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    padding-bottom: 74px;
+    position: relative;
+
+}
+.section_block{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.section_title{
+    font-size: 50px;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+ .section_text{
+     font-size: 33px;
+     color: #ffffff;
+     line-height: 1.3;
+ }
+
+ .section--section_food{
+     background: url("../img/food/orange.png")  no-repeat ;
+     /*background-size: cover;*/
+/*display: flex;*/
+     /*flex-flow: row wrap;*/
+
+
+ }
+
+
+
+ .section_waffle {
+     max-width: 791px;
+     max-height: 791px;
+     position: absolute;
+     top: 0;
+     right: -90px;
+     z-index: 1;
+ }
+
+
+ .section_eggs{
+     max-width: 895px;
+     max-height: 1035px;
+     /*!*position: absolute;*!*/
+     /*order: 999;*/
+     /*margin-left: 485px;*/
+     /*margin-top: 0;*/
+     /*margin-bottom: -80px;*/
+ }
+
+ .section_berries{
+     order: 999;
+     margin-right: auto;
+     margin-left: -85px;
+
+     MARGIN-TOP: -350PX;
+
+ }
+
