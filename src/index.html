@@ -25,27 +25,27 @@
 
 <div class="page">
 
-<header class="header">
+<header class="header" id="header">
   <div class="container">
 
-        <div class="header_inner">
+        <div class="header_inner" id="header_inner">
 
-            <div class="header_logo">
+            <div class="header_logo" data-scroll="#intro">
                 <img class="header_logo_img" src="img/intro/logo.png"  alt="">
             </div>
 
-              <nav class="nav">
+              <nav class="nav" id="nav">
 
-                  <a class="nav_link" href="#">home</a>
-                  <a class="nav_link" href="#">about</a>
-                  <a class="nav_link" href="#">menus</a>
-                  <a class="nav_link" href="#">offers</a>
-                  <a class="nav_link" id="logo" href="#">
+                  <a class="nav_link"  data-scroll="#intro" href="#">home</a>
+                  <a class="nav_link"  data-scroll="#about" href="#">about</a>
+                  <a class="nav_link"  data-scroll="#menus" href="#">menus</a>
+                  <a class="nav_link"  data-scroll="#offers" href="#">offers</a>
+                  <a class="nav_link" id="logo" data-scroll="#intro">
                       <img class="logo" src="img/intro/logo.png"  alt="">
                   </a>
-                  <a class="nav_link" href="#">gallery</a>
-                  <a class="nav_link" href="#">contact</a>
-                  <a class="nav_link" href="#">blog</a>
+                  <a class="nav_link" data-scroll="#gallery" href="#">gallery</a>
+                  <a class="nav_link" data-scroll="#contact" href="#">contact</a>
+                  <a class="nav_link" data-scroll="#blog" href="#">blog</a>
 
               </nav>
 
@@ -58,7 +58,7 @@
 </header><!--Header-->
 
 
-<div class="intro" >
+<div class="intro" id="intro">
     <div class="intro_back">
         <div class="container">
             <div class="intro_box">
@@ -71,7 +71,7 @@
                         <div class="intro_content">
                             <h1 class="intro_title">Contact Us For <br>Best Breakfast</h1>
                             <p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                            <a class="btm" href="#">Contact Us</a>
+                            <a class="btm" data-scroll="#contact">Contact Us</a>
                         </div>
                 </div>
             </div>
@@ -79,14 +79,14 @@
     </div>
 </div> <!--Intro-->
 
-<section class="section">
+<section class="section" id="about">
     <div class="container">
-        <div class="section_inner">
-            <div class="section_block">
+        <div class="section_inner" >
+            <div class="section_block" id="section_img">
                 <img class="section_img" src="img/AboutUs/1.png" alt="">
             </div>
             <div class="section_block">
-                <div class="section_title">About Us</div>
+                <div class="section_title" >About Us</div>
                 <div class="section_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
             </div>
         </div>
@@ -94,8 +94,8 @@
 
 </section>
 
-<section class="section">
-<section class="section--section_food">
+<section class="section" id="page_3">
+<section class="section--section_food" id="offers">
 
     <div class="container">
         <div class="section_inner">
@@ -121,7 +121,7 @@
 
 </section>
 
-<section class="section section_gallery">
+<section class="section section_gallery" id="gallery">
     <div class="container">
         <p class="titles">Our Food Gallery</p>
         <div class="gallery">
@@ -140,7 +140,7 @@
 </section>
 
 <section class="section">
-<section class="section section_enjoy">
+<section class="section section_enjoy" id="blog">
     <div class="container">
         <div class="enjoy_inner">
             <div class="enjoy_content">
@@ -156,7 +156,7 @@
 
 <section class="section">
     <div class="container">
-        <p class="titles">Our Menu</p>
+        <p class="titles" id="menus">Our Menu</p>
         <div class="menu">
             <div class="menu_items">
                 <img src="img/menu/1.png" alt="">
@@ -182,7 +182,7 @@
 </section>
 
 <section class="section">
-        <section class="section section_footer">
+        <section class="section section_footer" id="contact">
             <div class="container">
             <div class="footer">
                 <div class="footer_image">
@@ -225,38 +225,13 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
 
 </body>
 
 </html>
+<!--конец-->

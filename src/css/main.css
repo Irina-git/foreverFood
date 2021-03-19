@@ -152,9 +152,9 @@ body{
 
 }
  .header.fixed{
-     padding: 10px 0;
-     background: #ffffff;
-
+     padding: 0;
+     background: #1d1d23;
+     max-height: 100px;
      position: fixed;
      top: 0;
      right: 0;
@@ -162,9 +162,8 @@ body{
 
      transform: translate3d(0,0,0);
 
-
+     /*transition: 0.9s linear;*/
      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-
  }
 
  .header.active{
@@ -180,7 +179,7 @@ display: none;
 }
 
 .header_logo_img{
-    margin: 4px 4px;
+    margin: 9px 16px;
 }
 
 /*Nav*/
@@ -306,8 +305,8 @@ display: none;
 
 
 
- .logo{
-     margin: -20px 150px 0 150px;
+ .logo {
+     margin: -31px 150px 0 150px;
  }
 
 .section{
@@ -518,6 +517,11 @@ display: none;
 
  .footer_logo{
     margin-bottom: 60px;
+
+ }
+
+ .footer_logo img{
+   max-width: 100%;
  }
 
 
@@ -662,6 +666,7 @@ display: none;
      .header_logo{
          display: block;
      }
+
      .nav.active{
          display: block;
      }
@@ -682,18 +687,24 @@ display: none;
 
 
      .nav_link{
-     display: block;
-     margin: 0;
-     padding: 8px 20px;
+       display: block;
+       margin: 0;
+       padding: 9px 32px;
+     }
+     .nav_link:hover{
+         color: #1d1d23;
+         transition: color 0.1s linear;
      }
 
      .nav_link:first-child{
-         padding-left: 20px;
+         padding-left: 32px;
      }
 
 
      .nav_toggle{
-     display: block;
+       display: block;
+       top: 23px;
+       right: 27px;
      }
      button,
      button:active,
@@ -758,4 +769,199 @@ display: none;
      }
  }
 
+ @media (max-width: 915px){
+   #page_3{
+     display: none;
+   }
 
+   .section_title{
+     padding-top: 0;
+   }
+
+   .footer_navi {
+     font-size: 19px;
+   }
+   .footer_logo {
+     margin-bottom: 26px;
+   }
+   .social_item {
+     font-size: 38px;
+   }
+ }
+
+ @media (max-width: 748px){
+   .section_title {
+     font-size: 32px;
+   }
+   .section_text {
+     font-size: 17px;
+   }
+   .titles {
+     font-size: 32px;
+   }
+   .menu_items{
+     margin-bottom: 30px;
+   }
+
+ }
+ @media (max-width: 681px){
+   .menu_items {
+     margin-bottom: 80px;
+   }
+   .footer_navi {
+     font-size: 15px;
+   }
+
+   .footer_navi_links {
+     padding-right: 35px;
+   }
+
+   .social_item {
+     font-size: 30px;
+   }
+
+ }
+
+ @media (max-width: 594px){
+   .footer_navi{
+     display: none;
+   }
+
+   .gallery {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     text-align: center;
+   }
+   .gallery_img {
+     /* padding-right: 20px; */
+     padding-bottom: 15px;
+   }
+
+   .section_block_2 {
+
+     padding-top: 47px;
+
+   }
+ }
+
+ @media (max-width: 491px){
+   #section_img{
+     display: none;
+   }
+   .section_block {
+      width: 100%;
+      padding-left: 0;
+     position: relative;
+     text-align: center;
+   }
+
+   .menu {
+     justify-content: center;
+   }
+   .menu_text{
+     display: none;
+   }
+
+   .footer_image{
+     display: none;
+   }
+
+   .section_block_2 {
+     text-align: center;
+     padding-top: 20px;
+   }
+
+   .socials {
+
+      margin-left: 0;
+      margin-top: 0;
+   }
+ }
+
+ @media (max-width: 487px) {
+   .header_logo_img {
+     margin: 17px 13px;
+   }
+   .intro_title {
+     font-size: 44px;
+   }
+   .intro_text {
+     font-size: 16px;
+   }
+   .btm{
+     font-size: 16px;
+   }
+   .section_block_2 {
+     text-align: center;
+     padding-top: 17px;
+     padding-right: 0;
+     padding-bottom: 17px;
+   }
+ }
+
+ @media (max-width: 401px){
+   .intro_title {
+     font-size: 33px;
+   }
+   .intro_text {
+     font-size: 12px;
+   }
+   .btm{
+     padding: 10px 12px;
+   }
+
+ }
+
+ @media (max-width: 328px){
+   .intro_title {
+     font-size: 25px;
+   }
+   .intro_text {
+     font-size: 10px;
+   }
+   .btm {
+     font-size: 14px;
+     padding: 8px 10px;
+   }
+ }
+
+ @media (max-width: 366px){
+     .intro_title {
+         font-size: 26px;
+     }
+     .intro_text {
+         font-size: 9px;
+         margin-bottom: 27px;
+     }
+     .btm {
+         font-size: 13px;
+         padding: 8px 10px;
+     }
+     .section_title {
+         font-size: 23px;
+     }
+     .section_text {
+         font-size: 13px;
+     }
+     .section_inner{
+         padding-bottom: 0;
+     }
+     .titles {
+         font-size: 23px;
+     }
+     .enjoy_content {
+         text-align: center;
+         margin: auto;
+         padding: 2px 2px;
+     }
+     .menu_name{
+         font-size: 20px;
+     }
+     .menu_price{
+         font-size: 19px;
+     }
+     .footer_logo{
+         display: none;
+     }
+ }
